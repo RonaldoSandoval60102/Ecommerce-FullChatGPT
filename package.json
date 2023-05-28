@@ -32,6 +32,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"chart.js": "^4.3.0",
+		"keycloak-js": "^21.1.1",
 		"tw-elements": "^1.0.0-beta2"
 	}
 }

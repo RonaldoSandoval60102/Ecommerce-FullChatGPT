@@ -1,5 +1,6 @@
 <script>
 	import { createPopper } from '@popperjs/core';
+	import { Registry } from '$lib/auth/Registry';
 	let dropdownPopoverShow = false;
 	// @ts-ignore
 	let btnDropdownRef;
@@ -17,6 +18,9 @@
 				placement: 'bottom-start'
 			});
 		}
+	};
+	let logout = () => {
+		Registry.auth.logout();
 	};
 </script>
 
@@ -90,7 +94,7 @@
 					alt="logoutIco"
 					style="max-width: 20px; max-height: 20px; margin-right: 5px;"
 				/>
-				<span>Log Out</span>
+				<button on:click={logout}>Log Out</button>
 			</div>
 		</a>
 	</div>

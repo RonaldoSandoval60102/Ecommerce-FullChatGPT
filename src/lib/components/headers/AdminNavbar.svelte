@@ -5,20 +5,19 @@
 	import NotificationDropdown from '/src/lib/components/dropdowns/NotificationDropdown.svelte';
 </script>
 
-<nav class="p-5">
+<nav
+	class="absolute top-0 left-0 w-full z-10 bg-transparent md:flex-row md:flex-nowrap md:justify-start flex items-center p-5"
+>
 	<div
 		class="w-full mx-autp items-center flex justify-between md:flex-nowrap flex-wrap md:px-10 px-4"
 	>
-		<div class="w-6/12">
-				<img
-					src="/img/Logo.png"
-					alt="notificactionIcon"
-					class="float-left mr-2"
-					style="width: 30px;"
-				/>
-				<span style="color: black;" class="font-bold">Bienvenido </span><span style="color: #2765A5;" class="font-bold">Ronaldo</span>
-		</div>
-
+		<a
+			class="text-blue text-sm uppercase hidden lg:inline-block font-semibold"
+			href="#pablo"
+			on:click={(e) => e.preventDefault()}
+		>
+			Dashboard
+		</a>
 		<form class="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3">
 			<div class="relative flex w-full flex-wrap items-stretch">
 				<span
@@ -43,4 +42,3 @@
 		</ul>
 	</div>
 </nav>
-<div class="h-0 my-2 border border-solid border-blueGray-250" />

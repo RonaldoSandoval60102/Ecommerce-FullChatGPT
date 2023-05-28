@@ -20,13 +20,6 @@
 							>Features
 						</a>
 					</li>
-					<li class="md:mr-6 cursor-pointer pt-4 lg:py-0">
-						<a
-							href="#help"
-							class="focus:outline-none dark:text-white focus:underline hover:text-gray-500"
-							>Help
-						</a>
-					</li>
 					<li class="cursor-pointer pt-4 lg:py-0">
 						<a
 							href="#privacy"

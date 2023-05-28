@@ -1,12 +1,23 @@
 <script>
-    // @ts-ignore
-    import HeaderHome from '/src/lib/components/headers/headerHome.svelte';
-    // @ts-ignore
-    import CardHome from '/src/lib/components/cards/homeCard.svelte';
+	// @ts-ignore
+	import HeaderHome from '/src/lib/components/headers/HeaderHome.svelte';
+	// @ts-ignore
+	import About from '/src/routes/home/about/about.svelte';
+	// @ts-ignore
+	import Footer from '/src/lib/components/footers/Footer.svelte';
+	// @ts-ignore
+	import Feature from '/src/routes/home/feature/feature.svelte';
+	// @ts-ignore
+	import BannerHome from '/src/lib/components/banners/BannerHome.svelte';
+	// @ts-ignore
+	import CarouselHome from '/src/lib/components/carousel/CarouselHome.svelte';
 </script>
 
 <HeaderHome />
-<div class="h-0 my-2 border border-solid border-blueGray-500" />
 <div>
-    <CardHome />
+	<CarouselHome />
+	<BannerHome />
+	<About />
+	<Feature />
 </div>
+<Footer />

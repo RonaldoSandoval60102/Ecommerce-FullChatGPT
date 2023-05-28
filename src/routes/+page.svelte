@@ -1,2 +1,17 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    // @ts-ignore
+    import Home from '/src/routes/home/+page.svelte';
+    // @ts-ignore
+    import BlueApe from '/src/routes/blueape/+page.svelte';
+    // @ts-ignore
+	import AuthGuard from '$lib/auth/AuthGuard.svelte'; 
+</script>
+
+<AuthGuard manual={true}>
+	<div slot="authed" let:user>
+		<BlueApe />
+	</div>
+	<div slot="not_authed">
+        <Home />
+    </div>
+</AuthGuard>
